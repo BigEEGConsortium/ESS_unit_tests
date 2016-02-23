@@ -1,5 +1,5 @@
 %% LevelDerived creation
-level2Folder = [fileparts(which('level1Study')) filesep 'unit_test' filesep 'dummy_level_2'];
+level2Folder = [fileparts(which('test_levelDerived.m')) filesep 'dummy_level_2'];
 
 obj = levelDerivedStudy('parentStudyXmlFilePath', level2Folder); % this load the data but does not make a Level-derived 2 container yet (Obj it is still mostly empty).
 twiceFunction = @(x,y) x;
@@ -23,8 +23,8 @@ assert(isempty(issues));
 
 %% LevelDerived combination of partial runs
 
-partialLevelDerivedFolder1 = [fileparts(which('level1Study')) filesep 'unit_test' filesep 'dummy_level_derived_partial_1'];
-partialLevelDerivedFolder2 = [fileparts(which('level1Study')) filesep 'unit_test' filesep 'dummy_level_derived_partial_2'];
+partialLevelDerivedFolder1 = [fileparts(which('test_levelDerived.m')) filesep 'dummy_level_derived_partial_1'];
+partialLevelDerivedFolder2 = [fileparts(which('test_levelDerived.m')) filesep 'dummy_level_derived_partial_2'];
 combinedDirectory = [tempdir filesep 'dummy_level_derived_combined'];
 if exist(combinedDirectory, 'file')
     rmdir(combinedDirectory, 's');

@@ -1,3 +1,3 @@
 %% Level 2 validation
-obj = level2Study([fileparts(which('level1Study')) filesep 'unit_test' filesep 'dummy_level_2']);
+obj = level2Study([fileparts(which('test_level2.m')) filesep 'dummy_level_2']);
 obj.validate;
