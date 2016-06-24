@@ -3,8 +3,8 @@ receiveEssDocument({
 	"type": "essStudyLevel1",
 	"essVersion": "2.1",
 	"shortDescription": "Rapid Serial Visual Presentation (12Hz) Target (airplane) detection without immediate response",
-	"dateCreated": "2016-02-23T13:14:17",
-	"dateModified": "2016-02-23T13:14:17",
+	"dateCreated": "2016-02-23T15:36:12",
+	"dateModified": "2016-02-23T15:36:12",
 	"id": "eegstudy.org\/study\/RSVP_Study\/f99f8510-2444-4702-91e9-7ec153254cfc",
 	"DOI": "NA",
 	"contact": {
@@ -21,14 +21,14 @@ receiveEssDocument({
 		"allSubjectsHealthyAndNormal": "Yes",
 		"license": {
 			"type": "CC0",
-			"text": "The person who associated a work with this deed has dedicated the work to the public domain by waiving all of his or her rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission. \n        In no way are the patent or trademark rights of any person affected by CC0, nor are the rights that other persons may have in the work or in how the work is used, such as publicity or privacy rights.\n        Unless expressly stated otherwise, the person who associated a work with this deed makes no warranties about the work, and disclaims liability for all uses of the work, to the fullest extent permitted by applicable law.\n        When using or citing the work, you should not imply endorsement by the author or the affirmer.",
+			"text": "The person who associated a work with this deed has dedicated the work to the public domain by waiving all of his or her rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.\n        In no way are the patent or trademark rights of any person affected by CC0, nor are the rights that other persons may have in the work or in how the work is used, such as publicity or privacy rights.\n        Unless expressly stated otherwise, the person who associated a work with this deed makes no warranties about the work, and disclaims liability for all uses of the work, to the fullest extent permitted by applicable law.\n        When using or citing the work, you should not imply endorsement by the author or the affirmer.",
 			"link": "License.txt"
 		}
 	},
 	"projectFunding": [
 		{
 			"organization": "Swartz Center for Computational Neuroscience, UCSD",
-			"grantId": "NA"
+			"grantId": null
 		}
 	],
 	"tasks": [
@@ -40,9 +40,9 @@ receiveEssDocument({
 	],
 	"publications": [
 		{
-			"citation": "NA",
-			"DOI": "NA",
-			"link": "NA"
+			"citation": null,
+			"DOI": null,
+			"link": null
 		}
 	],
 	"experimenters": [
@@ -81,7 +81,7 @@ receiveEssDocument({
 					"type": "EEG",
 					"samplingRate": 256,
 					"name": "BIOSEMI",
-					"description": "NA",
+					"description": null,
 					"startChannel": 1,
 					"endChannel": 256,
 					"subjectInSessionNumber": "1",
@@ -365,9 +365,9 @@ receiveEssDocument({
 					"startChannel": 257,
 					"endChannel": 290,
 					"subjectInSessionNumber": "1",
-					"referenceLocation": "NA",
-					"referenceLabel": "NA",
-					"channelLocationType": "NA",
+					"referenceLocation": null,
+					"referenceLabel": null,
+					"channelLocationType": null,
 					"channelLabels": [
 						"non-connected EEG",
 						"non-connected EEG",
@@ -417,28 +417,28 @@ receiveEssDocument({
 			"taskLabel": "main",
 			"label": "non-target",
 			"description": "satellite image of London without the white airplane target",
-			"tag": "Event\/Label\/Non-target image, Event\/Description\/A non-target image is displayed for about 8 milliseconds, Event\/Category\/Experimental stimulus, (Item\/Natural scene\/Arial\/Satellite, Participant\/Effect\/Cognitive\/Non-target, Sensory presentation\/Visual\/Rendering type\/Screen\/2D), Attribute\/Onset"
+			"tag": "Event\/Label\/Non-target image, Event\/Description\/A non-target image is displayed for about 8 milliseconds, Event\/Category\/Experimental stimulus, (Item\/Natural scene\/Arial\/Satellite, Participant\/Effect\/Cognitive\/Expected\/Non-target, Sensory presentation\/Visual\/Rendering type\/Screen\/2D), Attribute\/Onset"
 		},
 		{
 			"code": "2",
 			"taskLabel": "main",
 			"label": "target frames",
 			"description": "satellite image of London with the white airplane target",
-			"tag": "Event\/Label\/Target image, Event\/Description\/A white airplane (the RSVP target) superimposed on a satellite image is displayed., Event\/Category\/Experimental stimulus, (Item\/Object\/Vehicle\/Aircraft\/Airplane, Participant\/Effect\/Cognitive\/Target, Sensory presentation\/Visual\/Rendering type\/Screen\/2D), (Item\/Natural scene\/Arial\/Satellite, Sensory presentation\/Visual\/Rendering type\/Screen\/2D)"
+			"tag": "Event\/Label\/Target image, Event\/Description\/A white airplane as the RSVP target superimposed on a satellite image is displayed., Event\/Category\/Experimental stimulus, (Item\/Object\/Vehicle\/Aircraft\/Airplane, Participant\/Effect\/Cognitive\/Target, Sensory presentation\/Visual\/Rendering type\/Screen\/2D), (Item\/Natural scene\/Arial\/Satellite, Sensory presentation\/Visual\/Rendering type\/Screen\/2D)"
 		},
 		{
 			"code": "4",
 			"taskLabel": "main",
 			"label": "no targets response",
 			"description": "no targets response indicated by pressing left button using dominant hand",
-			"tag": "Event\/Label\/NoTrgt BttnPress,  Event\/Description\/No-targets response indicated by pressing left button using dominant hand , Event\/Category\/Participant response, (Participant ~ Action\/Type\/Button press\/Keyboard ~ Participant\/Effect\/Body part\/Arm\/Hand\/Finger, Attribute\/Object side\/Left)"
+			"tag": "Event\/Label\/NoTrgt BttnPress,  Event\/Description\/No-targets response indicated by pressing left button using dominant hand , Event\/Category\/Participant response, (Participant ~ Action\/Button press\/Keyboard ~ Participant\/Effect\/Body part\/Arm\/Hand\/Finger, Attribute\/Object side\/Left)"
 		},
 		{
 			"code": "5",
 			"taskLabel": "main",
 			"label": "one target response",
 			"description": "one target response indicated by pressing right button using dominant hand",
-			"tag": "Event\/Label\/OneTrgt BttnPress,  Event\/Description\/One target response indicated by pressing right button using dominant hand, Event\/Category\/Participant response, (Participant ~ Action\/Type\/Button press\/Keyboard ~ Participant\/Effect\/Body part\/Arm\/Hand\/Finger, Attribute\/Object side\/Right)"
+			"tag": "Event\/Label\/OneTrgt BttnPress,  Event\/Description\/One target response indicated by pressing right button using dominant hand, Event\/Category\/Participant response, (Participant ~ Action\/Button press\/Keyboard ~ Participant\/Effect\/Body part\/Arm\/Hand\/Finger, Attribute\/Object side\/Right)"
 		},
 		{
 			"code": "6",
@@ -459,21 +459,21 @@ receiveEssDocument({
 			"taskLabel": "main",
 			"label": "'correct' feedback\" description",
 			"description": "visual feedback 'correct' indicating that the response was correct",
-			"tag": "Event\/Label\/Feedback correct, Event\/Description\/Visual feedback with the word Correct indicating that the response was correct, Event\/Category\/Experiment stimulus, Attribute\/Onset, Item\/Symbolic\/Character\/Letter, Attribute\/Visual\/Color\/White, Attribute\/Language\/Unit\/Word\/Adjective, Attribute\/Language\/Unit\/Word\/Correct, Participant\/Effect\/Visual, Sensory presentation\/Visual\/Rendering type\/Screen\/2D, Participant\/Effect\/Cognitive\/Feedback\/Correct, Participant\/Effect\/Cognitive\/Feedback\/Deterministic"
+			"tag": "Event\/Label\/Feedback correct, Event\/Description\/Visual feedback with the word Correct indicating that the response was correct, Event\/Category\/Experimental stimulus, Attribute\/Onset, Item\/Symbolic\/Character\/Letter, Attribute\/Visual\/Color\/White, Attribute\/Language\/Unit\/Word\/Adjective, Attribute\/Language\/Unit\/Word\/Correct, Participant\/Effect\/Visual, Sensory presentation\/Visual\/Rendering type\/Screen\/2D, Participant\/Effect\/Cognitive\/Feedback\/Correct, Participant\/Effect\/Cognitive\/Feedback\/Deterministic"
 		},
 		{
 			"code": "64",
 			"taskLabel": "main",
 			"label": "'wrong' feedback",
 			"description": "visual feedback 'wrong' indicating that the response was incorrect",
-			"tag": "Event\/Label\/Feedback incorrect, Event\/Description\/Visual feedback with the word Wrong indicating that the response was incorrect, Event\/Category\/Experiment stimulus, Attribute\/Onset, Item\/Symbolic\/Character\/Letter, Attribute\/Visual\/Color\/White, Attribute\/Language\/Unit\/Word\/Adjective, Attribute\/Language\/Unit\/Word\/Wrong, Participant\/Effect\/Visual, Sensory presentation\/Visual\/Rendering type\/Screen\/2D, Participant\/Effect\/Cognitive\/Feedback\/Incorrect, Participant\/Effect\/Cognitive\/Feedback\/Deterministic"
+			"tag": "Event\/Label\/Feedback incorrect, Event\/Description\/Visual feedback with the word Wrong indicating that the response was incorrect, Event\/Category\/Experimental stimulus, Attribute\/Onset, Item\/Symbolic\/Character\/Letter, Attribute\/Visual\/Color\/White, Attribute\/Language\/Unit\/Word\/Adjective, Attribute\/Language\/Unit\/Word\/Wrong, Participant\/Effect\/Visual, Sensory presentation\/Visual\/Rendering type\/Screen\/2D, Participant\/Effect\/Cognitive\/Feedback\/Incorrect, Participant\/Effect\/Cognitive\/Feedback\/Deterministic"
 		},
 		{
 			"code": "129",
 			"taskLabel": "main",
 			"label": "burst start",
 			"description": "the first image of a series of images that are presented in rapid succession",
-			"tag": "Event\/Label\/Non-target image, Event\/Description\/A non-target image is displayed for about 8 milliseconds, Event\/Category\/Experimental stimulus, (Item\/Natural scene\/Arial\/Satellite, Participant\/Effect\/Cognitive\/Non-target, Sensory presentation\/Visual\/Rendering type\/Screen\/2D), Attribute\/Onset"
+			"tag": "Event\/Label\/Non-target image, Event\/Description\/A non-target image is displayed for about 8 milliseconds, Event\/Category\/Experimental stimulus, (Item\/Natural scene\/Arial\/Satellite, Participant\/Effect\/Cognitive\/Expected\/Non-target, Sensory presentation\/Visual\/Rendering type\/Screen\/2D), Attribute\/Onset"
 		}
 	],
 	"copyright": "NA",
@@ -513,7 +513,7 @@ receiveEssDocument({
 					"height": "-",
 					"weight": "-",
 					"medication": {
-						"caffeine": "NA",
+						"caffeine": null,
 						"alcohol": "-"
 					},
 					"channelLocationFile": "channel_locations_RSVP_Study_session_1_task_main_subjectLabId_10__1_KMM_recording_1.elp"
@@ -526,9 +526,9 @@ receiveEssDocument({
 			"purpose": "training",
 			"labId": "exp45",
 			"notes": {
-				"note": "NA",
-				"linkName": "NA",
-				"link": "NA"
+				"note": null,
+				"linkName": null,
+				"link": null
 			},
 			"dataRecordings": [
 				{
@@ -554,7 +554,7 @@ receiveEssDocument({
 					"height": "-",
 					"weight": "-",
 					"medication": {
-						"caffeine": "NA",
+						"caffeine": null,
 						"alcohol": "-"
 					},
 					"channelLocationFile": "channel_locations_RSVP_Study_session_2_task_main_subjectLabId_19__1_3y4_recording_1.elp"
@@ -567,9 +567,9 @@ receiveEssDocument({
 			"purpose": "testing",
 			"labId": "exp47",
 			"notes": {
-				"note": "NA",
-				"linkName": "NA",
-				"link": "NA"
+				"note": null,
+				"linkName": null,
+				"link": null
 			},
 			"dataRecordings": [
 				{
@@ -595,7 +595,7 @@ receiveEssDocument({
 					"height": "-",
 					"weight": "-",
 					"medication": {
-						"caffeine": "NA",
+						"caffeine": null,
 						"alcohol": "-"
 					},
 					"channelLocationFile": "channel_locations_RSVP_Study_session_3_task_main_subjectLabId_20__1_eKd_recording_1.elp"
@@ -608,9 +608,9 @@ receiveEssDocument({
 			"purpose": "testing",
 			"labId": "exp48",
 			"notes": {
-				"note": "NA",
-				"linkName": "NA",
-				"link": "NA"
+				"note": null,
+				"linkName": null,
+				"link": null
 			},
 			"dataRecordings": [
 				{
@@ -636,7 +636,7 @@ receiveEssDocument({
 					"height": "-",
 					"weight": "-",
 					"medication": {
-						"caffeine": "NA",
+						"caffeine": null,
 						"alcohol": "-"
 					},
 					"channelLocationFile": "channel_locations_RSVP_Study_session_4_task_main_subjectLabId_10__1_RRZ_recording_1.elp"
@@ -649,9 +649,9 @@ receiveEssDocument({
 			"purpose": "testing",
 			"labId": "exp49",
 			"notes": {
-				"note": "NA",
-				"linkName": "NA",
-				"link": "NA"
+				"note": null,
+				"linkName": null,
+				"link": null
 			},
 			"dataRecordings": [
 				{
@@ -677,7 +677,7 @@ receiveEssDocument({
 					"height": "-",
 					"weight": "-",
 					"medication": {
-						"caffeine": "NA",
+						"caffeine": null,
 						"alcohol": "-"
 					},
 					"channelLocationFile": "channel_locations_RSVP_Study_session_5_task_main_subjectLabId_19__1_2YA_recording_1.elp"
@@ -690,9 +690,9 @@ receiveEssDocument({
 			"purpose": "training",
 			"labId": "exp50",
 			"notes": {
-				"note": "NA",
-				"linkName": "NA",
-				"link": "NA"
+				"note": null,
+				"linkName": null,
+				"link": null
 			},
 			"dataRecordings": [
 				{
@@ -718,7 +718,7 @@ receiveEssDocument({
 					"height": "-",
 					"weight": "-",
 					"medication": {
-						"caffeine": "NA",
+						"caffeine": null,
 						"alcohol": "-"
 					},
 					"channelLocationFile": "channel_locations_RSVP_Study_session_6_task_main_subjectLabId_20__1_siD_recording_1.elp"
@@ -731,9 +731,9 @@ receiveEssDocument({
 			"purpose": "training",
 			"labId": "exp52",
 			"notes": {
-				"note": "NA",
-				"linkName": "NA",
-				"link": "NA"
+				"note": null,
+				"linkName": null,
+				"link": null
 			},
 			"dataRecordings": [
 				{
@@ -759,7 +759,7 @@ receiveEssDocument({
 					"height": "-",
 					"weight": "-",
 					"medication": {
-						"caffeine": "NA",
+						"caffeine": null,
 						"alcohol": "-"
 					},
 					"channelLocationFile": "channel_locations_RSVP_Study_session_7_task_main_subjectLabId_22__1_VTs_recording_1.elp"
@@ -772,9 +772,9 @@ receiveEssDocument({
 			"purpose": "training",
 			"labId": "exp53",
 			"notes": {
-				"note": "NA",
-				"linkName": "NA",
-				"link": "NA"
+				"note": null,
+				"linkName": null,
+				"link": null
 			},
 			"dataRecordings": [
 				{
@@ -800,7 +800,7 @@ receiveEssDocument({
 					"height": "-",
 					"weight": "-",
 					"medication": {
-						"caffeine": "NA",
+						"caffeine": null,
 						"alcohol": "-"
 					},
 					"channelLocationFile": "channel_locations_RSVP_Study_session_8_task_main_subjectLabId_23_sessi_hannel_m1Q_recording_1.elp"
@@ -813,9 +813,9 @@ receiveEssDocument({
 			"purpose": "testing",
 			"labId": "exp54",
 			"notes": {
-				"note": "NA",
-				"linkName": "NA",
-				"link": "NA"
+				"note": null,
+				"linkName": null,
+				"link": null
 			},
 			"dataRecordings": [
 				{
@@ -841,7 +841,7 @@ receiveEssDocument({
 					"height": "-",
 					"weight": "-",
 					"medication": {
-						"caffeine": "NA",
+						"caffeine": null,
 						"alcohol": "-"
 					},
 					"channelLocationFile": "channel_locations_RSVP_Study_session_9_task_main_subjectLabId_22__1_i52_recording_1.elp"
@@ -854,9 +854,9 @@ receiveEssDocument({
 			"purpose": "training",
 			"labId": "exp55",
 			"notes": {
-				"note": "NA",
-				"linkName": "NA",
-				"link": "NA"
+				"note": null,
+				"linkName": null,
+				"link": null
 			},
 			"dataRecordings": [
 				{
@@ -882,7 +882,7 @@ receiveEssDocument({
 					"height": "-",
 					"weight": "-",
 					"medication": {
-						"caffeine": "NA",
+						"caffeine": null,
 						"alcohol": "-"
 					},
 					"channelLocationFile": "channel_locations_RSVP_Study_session_10_task_main_subjectLabId_24__1_uZ7_recording_1.elp"
@@ -895,9 +895,9 @@ receiveEssDocument({
 			"purpose": "training",
 			"labId": "exp56",
 			"notes": {
-				"note": "NA",
-				"linkName": "NA",
-				"link": "NA"
+				"note": null,
+				"linkName": null,
+				"link": null
 			},
 			"dataRecordings": [
 				{
@@ -923,7 +923,7 @@ receiveEssDocument({
 					"height": "-",
 					"weight": "-",
 					"medication": {
-						"caffeine": "NA",
+						"caffeine": null,
 						"alcohol": "-"
 					},
 					"channelLocationFile": "channel_locations_RSVP_Study_session_11_task_main_subjectLabId_25__1_5ZD_recording_1.elp"
@@ -936,9 +936,9 @@ receiveEssDocument({
 			"purpose": "testing",
 			"labId": "exp57",
 			"notes": {
-				"note": "NA",
-				"linkName": "NA",
-				"link": "NA"
+				"note": null,
+				"linkName": null,
+				"link": null
 			},
 			"dataRecordings": [
 				{
@@ -964,7 +964,7 @@ receiveEssDocument({
 					"height": "-",
 					"weight": "-",
 					"medication": {
-						"caffeine": "NA",
+						"caffeine": null,
 						"alcohol": "-"
 					},
 					"channelLocationFile": "channel_locations_RSVP_Study_session_12_task_main_subjectLabId_23__1_MWp_recording_1.elp"
@@ -977,9 +977,9 @@ receiveEssDocument({
 			"purpose": "training",
 			"labId": "exp58",
 			"notes": {
-				"note": "NA",
-				"linkName": "NA",
-				"link": "NA"
+				"note": null,
+				"linkName": null,
+				"link": null
 			},
 			"dataRecordings": [
 				{
@@ -1005,7 +1005,7 @@ receiveEssDocument({
 					"height": "-",
 					"weight": "-",
 					"medication": {
-						"caffeine": "NA",
+						"caffeine": null,
 						"alcohol": "-"
 					},
 					"channelLocationFile": "channel_locations_RSVP_Study_session_13_task_main_subjectLabId_21__1_UhU_recording_1.elp"
@@ -1018,9 +1018,9 @@ receiveEssDocument({
 			"purpose": "testing",
 			"labId": "exp59",
 			"notes": {
-				"note": "NA",
-				"linkName": "NA",
-				"link": "NA"
+				"note": null,
+				"linkName": null,
+				"link": null
 			},
 			"dataRecordings": [
 				{
@@ -1046,7 +1046,7 @@ receiveEssDocument({
 					"height": "-",
 					"weight": "-",
 					"medication": {
-						"caffeine": "NA",
+						"caffeine": null,
 						"alcohol": "-"
 					},
 					"channelLocationFile": "channel_locations_RSVP_Study_session_14_task_main_subjectLabId_25__1_Tph_recording_1.elp"
@@ -1059,9 +1059,9 @@ receiveEssDocument({
 			"purpose": "testing",
 			"labId": "exp60",
 			"notes": {
-				"note": "NA",
-				"linkName": "NA",
-				"link": "NA"
+				"note": null,
+				"linkName": null,
+				"link": null
 			},
 			"dataRecordings": [
 				{
@@ -1087,7 +1087,7 @@ receiveEssDocument({
 					"height": "-",
 					"weight": "-",
 					"medication": {
-						"caffeine": "NA",
+						"caffeine": null,
 						"alcohol": "-"
 					},
 					"channelLocationFile": "channel_locations_RSVP_Study_session_15_task_main_subjectLabId_21__1_Qev_recording_1.elp"

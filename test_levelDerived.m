@@ -31,7 +31,7 @@ if exist(combinedDirectory, 'file')
 end;
 
 obj = levelDerivedStudy;
-obj = obj.combinePartialRuns({partialLevelDerivedFolder1 partialLevelDerivedFolder2}, combinedDirectory);
+obj = obj.combinePartialRuns({partialLevelDerivedFolder2 partialLevelDerivedFolder1}, combinedDirectory);
 
 [obj issues] = obj.validate;
 assert(isempty(issues));
