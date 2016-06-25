@@ -1,6 +1,12 @@
 b = Block('tensor', [1 2 3; 4 5 6], 'axes', {TimeAxis('times', [0 0.1]), FrequencyAxis('frequencies', [1 2 3])});
 b = Block('tensor', [1 2 3; 4 5 6], 'axes', {TimeAxis('times', [0 0.1]), TimeAxis('times', [1 2 3])});
+
+%%
+b = Block('tensor', [1 2 3; 4 5 6], 'axes', {TimeAxis('times', [0 0.1]), FrequencyAxis('frequencies', [1 2 3])});
+newObj = b.sliceAxes('time', 1, 'frequencies', 1:2);
+%%
 b = Block('tensor', [1 2 3; 4 5 6], 'axes', {TimeAxis('times', [0 0.1]), SpaceAxis('length', 3)});
+assert(isequal(b({'time', '2:2'}, :), [ 4 5 6]));
 %%
 s = SpaceAxis('length', 10);
 assert(length(s.labels) == 10);
@@ -18,3 +24,22 @@ numberOfIndicesBefore = 2;
 numberOfIndicesAfter = 3;
 epochedTensor = EpochedFeature.epochTensor(tensor, indices, numberOfIndicesBefore, numberOfIndicesAfter);
 assert(isequal(epochedTensor(1,:),  [3 4 5 6 7 8]));
+
+%%
+
+[afterRemoval, trialTimes, trialHEDStrings, trialEventTypes] = EpochedFeature.getTrialTimesFromEEGstructure('EEG', EEG, 'maxSameTypeCount', 500);
+[trialFrames, trialTimes, trialHEDStrings, trialEventTypes] = EpochedFeature.getTrialTimesFromEEGstructure('EEG', EEG, 'maxSameTypeProximity', Inf);
+
+figure; 
+hold on;
+scatter(trialFrames, repmat(1, [1, length(trialFrames)]), 'b', 'filled'); 
+scatter(afterRemoval, repmat(1, [1, length(afterRemoval)]), 'r', 'filled');
+
+%%
+% load a sample RSVP dataset with 3 channels
+load([fileparts(which('test_level1.m')) filesep 'for_feature' filesep 'RSVP_small.mat']);
+obj = EpochedTemporalFeature;
+obj = obj.epochChannels(EEG, 'select', {'maxSameTypeCount', 500});
+%% 
+load([fileparts(which('test_level1.m')) filesep 'for_feature' filesep 'RSVP_events_epochedTemporalFEature.mat']); % loads obj variable
+
