@@ -1,5 +1,13 @@
+% defining Blocks
 b = Block('tensor', [1 2 3; 4 5 6], 'axes', {TimeAxis('times', [0 0.1]), FrequencyAxis('frequencies', [1 2 3])});
-b = Block('tensor', [1 2 3; 4 5 6], 'axes', {TimeAxis('times', [0 0.1]), TimeAxis('times', [1 2 3]) });
+b = Block('tensor', [1 2 3; 4 5 6], 'axes', {TimeAxis('times', [0 0.1]), TimeAxis('times', [1 2 3])});
+
+%% slicing axis
+b = Block('tensor', [1 2 3; 4 5 6], 'axes', {TimeAxis('times', [0 0.1]), FrequencyAxis('frequencies', [1 2 3])});
+b({'time', 1}, :);
+b({'frequency', 1}, :);
+b({'time', 1:2}, {'frequency', 1});
+newObj = b.sliceAxes('frequency', 1, 'time', 1:2)
 %%
 b = Block('tensor', [1 2 3; 4 5 6], 'axes', {TimeAxis('times', [0 0.1]), SpaceAxis('length', 3)});
 assert(isequal(b({'time', '2:2'}, :), [ 4 5 6]));
@@ -36,3 +44,9 @@ scatter(afterRemoval, repmat(1, [1, length(afterRemoval)]), 'r', 'filled');
 load([fileparts(which('test_level1.m')) filesep 'for_feature' filesep 'RSVP_small.mat']);
 obj = EpochedTemporalFeature;
 obj = obj.epochChannels(EEG, 'select', {'maxSameTypeCount', 500});
+%% 
+load([fileparts(which('test_level1.m')) filesep 'for_feature' filesep 'RSVP_events_epochedTemporalFEature.mat']); % loads obj variable
+
+%% Axis slicing
+t = TimeAxis('times', [0:0.1:10]);
+length(t(1:5).times)
