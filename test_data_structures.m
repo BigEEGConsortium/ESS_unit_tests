@@ -40,33 +40,14 @@ numberOfIndicesAfter = 3;
 epochedTensor = EpochedFeature.epochTensor(tensor, indices, numberOfIndicesBefore, numberOfIndicesAfter);
 assert(isequal(epochedTensor(1,:),  [3 4 5 6 7 8]));
 
-%%
-
-[afterRemoval, trialTimes, trialHEDStrings, trialEventTypes] = EpochedFeature.getTrialTimesFromEEGstructure('EEG', EEG, 'maxSameTypeCount', 500);
-[trialFrames, trialTimes, trialHEDStrings, trialEventTypes] = EpochedFeature.getTrialTimesFromEEGstructure('EEG', EEG, 'maxSameTypeProximity', Inf);
-
-figure; 
-hold on;
-scatter(trialFrames, repmat(1, [1, length(trialFrames)]), 'b', 'filled'); 
-scatter(afterRemoval, repmat(1, [1, length(afterRemoval)]), 'r', 'filled');
-
-%%
-% load a sample RSVP dataset with 3 channels
-load([fileparts(which('test_level1.m')) filesep 'for_feature' filesep 'RSVP_small.mat']);
-obj = EpochedTemporalFeature;
-obj = obj.epochChannels(EEG, 'select', {'maxSameTypeCount', 500});
-%% 
-load([fileparts(which('test_level1.m')) filesep 'for_feature' filesep 'RSVP_events_epochedTemporalFEature.mat']); % loads obj variable
-[newObj, cleanIds, averageOutlierRatio]= obj.removeNoisyEpochs('zthreshold', 5.5);
-
-[v id] = sort(averageOutlierRatio);
-figure; imagesc(obj.index({'trial', id}, 'time', 3));
-q = quantile(abs(vec(obj.index('trial', {'channel', 3}, :))), 0.98);
-caxis([-q q])
 %% Axis slicing
 t = TimeAxis('times', [0:0.1:10]);
-assert(length(t(1:5).times) == 5);
+%assert(length(t(1:5).times) == 5);
+t2 = t(1:5);
+assert(length(t2.times) == 5);
 
 % make sure multidimensional per-item axis properties slice only on the first dimension 
 c = ChannelAxis('length', 3, 'positions', rand(3, 5));
-assert(isequal(size(c(1:2).positions), [2     5]));
+c2 = c(1:2);
+assert(isequal(size(c2.positions), [2     5]));
+%assert(isequal(size(c(1:2).positions), [2     5]));
